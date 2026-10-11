@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body class="dark">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -78,8 +78,8 @@
             </div>
 
             <nav class="nav">
-                <button class="nav-link" data-section="about">About Me</button>
-                <button class="nav-link active" data-section="settings">My Game Settings</button>
+                <button class="nav-link active" data-section="about">About Me</button>
+                <button class="nav-link" data-section="settings">My Game Settings</button>
                 <button class="nav-link" data-section="gear">My Gear</button>
             </nav>
 
@@ -87,253 +87,73 @@
         </aside>
 
         <main class="content">
-            <section class="section" data-section="about">
-                <div class="about-panel-flip" id="aboutPanelFlip">
-                    <div class="about-panel-card">
-                        <div class="panel about-panel about-panel-face about-panel-front" data-about-panel-toggle tabindex="0" role="button" aria-label="Show streaming and upload schedule">
-                            <div class="about-copy">
-                                <h2>A bit about myself</h2>
-                                <div class="about-intro-chip">My name is Liam</div>
-                                <div class="about-role-tags" aria-label="Player role attributes">
-                                    <span class="about-role-tag">AWP</span>
-                                    <span class="about-role-tag">Mirage</span>
-                                    <span class="about-role-tag">Callouts</span>
-                                </div>
-                                <p>I started playing games at a very young age and got hooked on FPS titles through Call of Duty 2 and Call of Duty 4. But I really fell in love with the genre when I stepped into the CS:GO territory.</p>
-                                <p>Now I’m actively pursuing the highest level of gameplay, constantly improving while also maintaining that "fun" in games.</p>
-                                <blockquote class="about-quote">
-                                    <span class="about-quote-mark">"</span>
-                                    <p>Your time is limited, so don’t waste it living someone else’s life.</p>
-                                </blockquote>
-                            </div>
+            <section class="section active" data-section="about">
+<div class="c-wrap">
+    <section class="c-hero">
+        <div class="c-head">
+            <span class="c-kicker">A bit about myself</span>
+            <h1>My name is <em>Liam</em></h1>
+        </div>
+        <figure class="c-frame" aria-label="Photo placeholder">
+            <span class="c-glow" aria-hidden="true"></span>
+            <div class="c-img">
+                <!-- <svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="26"/><path d="M12 150c2-36 22-54 48-54s46 18 48 54"/></svg>-->
+                <img src="pfp.png" alt="Liam"> 
+                <span>Your photo</span>
+            </div>
+        </figure>
+        <ul class="c-tags"><li>AWP</li><li>Mirage</li><li>Callouts</li></ul>
+        <div class="c-body">
+            <p>I started playing games at a very young age and got hooked on FPS titles through Call of Duty 2 and Call of Duty 4. But I really fell in love with the genre when I stepped into the CS:GO territory. Now I’m actively pursuing the highest level of gameplay, constantly improving while also maintaining that "fun" in games.</p>
+            <blockquote>Your time is limited, so don’t waste it living someone else’s life.</blockquote>
+        </div>
 
-                            <div class="milestone-summary">
-                                <div class="summary-box">
-                                    <span>Started With</span>
-                                    <strong>Competitive CS2 passion</strong>
-                                </div>
-                                <div class="summary-box">
-                                    <span>Built Around</span>
-                                    <strong>YouTube + Esports</strong>
-                                </div>
-                                <div class="summary-box">
-                                    <span>Current Goal</span>
-                                    <strong>Make it to the Premier League</strong>
-                                </div>
-                            </div>
-                        </div>
+    <section class="c-dock">
+        <article class="c-pill c-contact lift">
+            <span class="c-kicker">Contact me</span>
+            <div class="c-rows">
+                <a class="c-row" href="https://x.com/wave_ll7" target="_blank" rel="noreferrer">
+                    <span class="c-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-x" width="24" height="24"/></svg></span>
+                    <span class="c-row-t"><small>DM me on X</small><b>@wave_ll7</b></span><i class="arr" aria-hidden="true"></i>
+                </a>
+                <a class="c-row" href="mailto:wave_l7.business@outlook.com">
+                    <span class="c-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="3.2"/><path d="m4.5 8.5 7.5 5.2 7.5-5.2"/></svg></span>
+                    <span class="c-row-t"><small>Email</small><b>wave_l7.business@outlook.com</b></span><i class="arr" aria-hidden="true"></i>
+                </a>
+            </div>
+        </article>
+        <article class="c-pill c-where lift">
+            <span class="c-kicker">Based in</span>
+            <div class="c-pin" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h2>Slovenia</h2><p>Europe</p>
+        </article>
+        <article class="c-pill lift">
+            <span class="c-kicker">My week</span>
+            <div class="c-days" id="cDays">
+                <span data-d="1"><em>M</em><i class="mk off"></i></span><span data-d="2"><em>T</em><i class="mk off"></i></span><span data-d="3"><em>W</em><i class="mk up"></i></span><span data-d="4"><em>T</em><i class="mk off"></i></span><span data-d="5"><em>F</em><i class="mk st"></i></span><span data-d="6"><em>S</em><i class="mk st"></i></span><span data-d="0"><em>S</em><i class="mk both"></i></span>
+            </div>
+            <p class="c-note"><i class="mk st"></i>Stream <i class="mk up"></i>Upload <i class="mk both"></i>Both</p>
+            <p class="c-note2">Streams Fri–Sun, 7–10 PM (Ljubljana time)</p>
+        </article>
+    </section>
+    </section>
 
-                        <div class="panel about-panel about-panel-face about-panel-back">
-                            <button class="about-panel-toggle" type="button" data-about-panel-toggle aria-label="Show about me story">Back to Story</button>
-                            <div class="schedule-copy">
-                                <span class="widget-kicker">Content Schedule</span>
-                                <h2>Live & Upload Calendar</h2>
-                                <p>Keeping the week simple and consistent: live streams run from Friday to Sunday, and new videos land on Wednesday and Sunday.</p>
-                                <div class="schedule-legend" aria-label="Calendar legend">
-                                    <div class="schedule-legend-item">
-                                        <span class="schedule-marker stream" aria-hidden="true"></span>
-                                        <span>Stream</span>
-                                    </div>
-                                    <div class="schedule-legend-item">
-                                        <span class="schedule-marker upload" aria-hidden="true"></span>
-                                        <span>Upload</span>
-                                    </div>
-                                    <div class="schedule-legend-item">
-                                        <span class="schedule-marker both" aria-hidden="true"></span>
-                                        <span>Stream + Upload</span>
-                                    </div>
-                                </div>
-                            </div>
+    <section class="c-journey" id="cJourney">
+        <header class="c-jhead">
+            <div><span class="c-kicker">Progress timeline</span><h2>The road so far</h2></div>
+            <div class="ab-tabs" role="tablist" aria-label="Timeline"><span class="ab-glass" aria-hidden="true"></span><button class="ab-tab active" data-key="esports">Esports</button><button class="ab-tab" data-key="channel">Channel</button></div>
+        </header>
+        <div id="cTimeline" tabindex="-1"></div>
+        <div id="cPager" class="tl-pager" hidden></div>
+    </section>
+    <p class="c-outro">Thanks for all the support and for taking the time to read my story.</p>
+</div>
+</section>
 
-                            <div class="schedule-card" aria-label="Weekly content calendar">
-                                <div class="schedule-grid">
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Mon</span>
-                                        <span class="schedule-marker off" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Tue</span>
-                                        <span class="schedule-marker off" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Wed</span>
-                                        <span class="schedule-marker upload" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Thu</span>
-                                        <span class="schedule-marker off" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Fri</span>
-                                        <span class="schedule-marker stream" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day">
-                                        <span class="schedule-day-label">Sat</span>
-                                        <span class="schedule-marker stream" aria-hidden="true"></span>
-                                    </div>
-                                    <div class="schedule-day featured">
-                                        <span class="schedule-day-label">Sun</span>
-                                        <span class="schedule-marker both" aria-hidden="true"></span>
-                                    </div>
-                                </div>
-                                <div class="schedule-note">
-                                    <strong>Streaming:</strong> Friday to Sunday, 7 PM to 10 PM (Ljubljana time)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="about-widgets">
-                    <div class="panel about-widget contact-widget">
-                        <div class="widget-header">
-                            <span class="widget-kicker">Contact Me</span>
-                            <h3>Messages & Business Reachout</h3>
-                        </div>
-                        <div class="contact-list">
-                            <div class="contact-item">
-                                <div class="contact-item-main">
-                                    <span>DM me on X</span>
-                                    <strong>@wave_ll7</strong>
-                                </div>
-                                <a class="contact-mini-cta" href="https://x.com/wave_ll7?s=21&t=BufkbjyhLS3uzWWzU3MtsQ" target="_blank" rel="noreferrer" aria-label="Open X contact"></a>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-item-main">
-                                    <span>Email</span>
-                                    <strong>wave_l7.business@outlook.com</strong>
-                                </div>
-                                <a class="contact-mini-cta" href="mailto:wave_l7.business@outlook.com" aria-label="Open email prompt"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel about-widget region-widget">
-                        <div class="widget-header">
-                            <span class="widget-kicker">Country & Region</span>
-                            <h3>Europe / Slovenia</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-header">
-                    <div class="section-title timeline-title">Progress Timeline</div>
-                    <div class="timeline-switch" aria-label="Timeline switcher">
-                        <span class="timeline-switch-glass" aria-hidden="true"></span>
-                        <button class="timeline-tab active" data-timeline="esports">Esports</button>
-                        <button class="timeline-tab" data-timeline="channel">Channel</button>
-                    </div>
-                </div>
-
-                <div class="timeline-view active" data-timeline-view="esports">
-                    <div class="timeline">
-                        <article class="timeline-item timeline-item-start completed">
-                            <span class="timeline-year">The Beginning</span>
-                            <button class="timeline-card-flip" type="button" aria-label="Show Competitive Start achievement date">
-                                <div class="timeline-card-stack">
-                                    <div class="timeline-card timeline-card-front">
-                                        <h3>Competitive Start</h3>
-                                        <p>Started my grind up at the beginning of 2026 and am slowly grinding my way to the top level of the faceit playerbase.</p>
-                                    </div>
-                                    <div class="timeline-card timeline-card-back">
-                                        <span class="timeline-date-label">Achievement Date</span>
-                                        <strong>17 Jan 2026</strong>
-                                    </div>
-                                </div>
-                            </button>
-                        </article>
-                        <article class="timeline-item completed">
-                            <span class="timeline-year">Breakthrough</span>
-                            <button class="timeline-card-flip" type="button" aria-label="Show First Serious Milestone achievement date">
-                                <div class="timeline-card-stack">
-                                    <div class="timeline-card timeline-card-front">
-                                        <h3>First Serious Milestone</h3>
-                                        <p>Reached 3k ELO for the first time </p>
-                                    </div>
-                                    <div class="timeline-card timeline-card-back">
-                                        <span class="timeline-date-label">Achievement Date</span>
-                                        <strong>30 Mar 2026</strong>
-                                    </div>
-                                </div>
-                            </button>
-                        </article>
-                        <article class="timeline-item goal">
-                            <span class="goal-rings" aria-hidden="true"></span>
-                            <span class="goal-orbit" aria-hidden="true"></span>
-                            <span class="timeline-year">Next</span>
-                            <div class="timeline-card">
-                                <h3>Final Goal</h3>
-                                <p>Aim to reach 4k ELO and earn a spot on my first esports team.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="timeline-view" data-timeline-view="channel">
-                    <div class="timeline">
-                        <article class="timeline-item timeline-item-start completed">
-                            <span class="timeline-year">The Start</span>
-                            <button class="timeline-card-flip" type="button" aria-label="Show Channel Launch achievement date">
-                                <div class="timeline-card-stack">
-                                    <div class="timeline-card timeline-card-front">
-                                        <h3>Channel Launch</h3>
-                                        <p>Created the Wave channel and uploaded the first Call of Duty Warzone montage.</p>
-                                    </div>
-                                    <div class="timeline-card timeline-card-back">
-                                        <span class="timeline-date-label">Achievement Date</span>
-                                        <strong>10 Nov 2020</strong>
-                                    </div>
-                                </div>
-                            </button>
-                        </article>
-                        <article class="timeline-item completed">
-                            <span class="timeline-year">Video Milestone</span>
-                            <button class="timeline-card-flip" type="button" aria-label="Show Grinding Phase achievement date">
-                                <div class="timeline-card-stack">
-                                    <div class="timeline-card timeline-card-front">
-                                        <h3>First Big Short</h3>
-                                        <p>"Justice Rains From Above" Became the first Arc Raiders Short to reach one hundred thousand views on Christmas Eve and it felt unreal.</p>
-                                    </div>
-                                    <div class="timeline-card timeline-card-back">
-                                        <span class="timeline-date-label">Achievement Date</span>
-                                        <strong>24 Dec 2025</strong>
-                                    </div>
-                                </div>
-                            </button>
-                        </article>
-                        <article class="timeline-item completed">
-                            <span class="timeline-year">Video Milestone</span>
-                            <button class="timeline-card-flip" type="button" aria-label="Show Breakthrough achievement date">
-                                <div class="timeline-card-stack">
-                                    <div class="timeline-card timeline-card-front">
-                                        <h3>First Hundred Views</h3>
-                                        <p>"Solo Queue Dust 2 FACEIT – Road to 3K" Became the first video to pass one hundred views.</p>
-                                    </div>
-                                    <div class="timeline-card timeline-card-back">
-                                        <span class="timeline-date-label">Achievement Date</span>
-                                        <strong>16 Mar 2026</strong>
-                                    </div>
-                                </div>
-                            </button>
-                        </article>
-                        <article class="timeline-item goal">
-                            <span class="goal-rings" aria-hidden="true"></span>
-                            <span class="goal-orbit" aria-hidden="true"></span>
-                            <span class="timeline-year">Goal</span>
-                            <div class="timeline-card">
-                                <h3>Channel Goal</h3>
-                                <p>Reach 100 Subscribers on YouTube.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <p class="timeline-outro">Thanks for all the support and for taking the time to read my story.</p>
-            </section>
-
-            <section class="section active" data-section="settings">
-                <div class="section-title">My Game Settings</div>
-                <div class="panel settings-panel">
+            <section class="section" data-section="settings">
+                <div class="settings-head"><div class="section-title" data-kicker="Setup">My Game Settings</div><div class="ab-tabs" id="gameTabs" role="tablist" aria-label="Game" hidden></div></div>
+                <div class="panel settings-panel game-pane" data-game="cs2" data-label="Counter-Strike 2" data-short="CS2">
                     <p class="section-intro">My Counter‑Strike 2 in-game settings. Click any row to copy the value.</p>
 
                     <div class="settings-list">
@@ -415,10 +235,13 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            <div class="panel settings-panel game-pane" data-game="ow2" data-label="Overwatch 2" data-short="OW2" hidden>
+<div class="game-empty"><svg viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="21"/><circle cx="31" cy="31" r="10.5"/><path d="M31 6v10M31 46v10M6 31h10M46 31h10"/><circle class="dot" cx="31" cy="31" r="3.2"/></svg><h3>Overwatch 2 settings are coming soon</h3><p>Sensitivity, crosshair and video settings will live here.</p></div>
+</div>
+</section>
 
             <section class="section" data-section="gear">
-                <div class="section-title">My Gear</div>
+                <div class="section-title" data-kicker="Peripherals">My Gear</div>
                 <div class="panel">
                     <div class="grid">
                         <div class="card">
@@ -456,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="section-title">My System</div>
+                <div class="section-title" data-kicker="PC build">My System</div>
                 <div class="panel">
                     <div class="grid">
                         <div class="card">
@@ -519,6 +342,6 @@
         </div>
     </div>
 
-    <script src="script.js?v=10"></script>
+    <script src="script.js?v=13"></script>
 </body>
 </html>
