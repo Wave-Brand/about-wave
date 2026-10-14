@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found · Wave</title>
+<link rel="icon" href="/about-wave/site_top.png" type="image/png">
+<style>
+html,body{height:100%;margin:0}
+body{display:grid;place-items:center;background:linear-gradient(135deg,#03100e,#071917 45%,#04100f);color:#effffb;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
+main{padding:24px}
+h1{margin:0 0 10px;font-size:clamp(2rem,6vw,3.2rem)}
+h1 span{color:#00ffc3}
+p{margin:0 0 26px;color:#9ccbc0}
+a{display:inline-block;padding:12px 22px;border-radius:20px;border:1px solid rgba(0,255,195,.45);background:rgba(0,255,195,.12);color:#effffb;text-decoration:none;font-weight:700}
+a:hover{background:rgba(0,255,195,.2)}
+</style>
+</head>
+<body>
+<main>
+<h1>Page <span>not found</span></h1>
+<p>That link doesn't lead anywhere. Try one of the pages below.</p>
+<p><a id="home" href="/">About Me</a> &nbsp; <a id="settings" href="/settings/">My Game Settings</a> &nbsp; <a id="gear" href="/gear/">My Gear</a></p>
+</main>
+<script>
+// works on a github.io project site (/about-wave/...) and on a custom domain
+var parts = location.pathname.split('/').filter(Boolean);
+var base = (location.hostname.slice(-10) === '.github.io' && parts.length) ? '/' + parts[0] + '/' : '/';
+document.getElementById('home').href = base;
+document.getElementById('settings').href = base + 'settings/';
+document.getElementById('gear').href = base + 'gear/';
+</script>
+</body>
+</html>
